@@ -1,0 +1,87 @@
+:root {
+    --main-color : #272a30;
+    --navbar-color : #18191b;
+    --hover-color : #506f8a;
+    --font-color : #ffffff;
+}
+/*
+-----------------------------
+    Pages
+-----------------------------
+*/ 
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+.smash-pass {
+    text-align: center;
+}
+.smash-pass img {
+    width: 800px;
+    margin: 5%;
+}
+.smash-pass button {
+    background-color: var(--navbar-color);
+    color: var(--font-color);
+    font-size: 20px;
+    margin: 20px;
+    border: none;
+    padding: 20px 50px;
+    transition: all 0.3s;
+}
+#btn-smash:hover{
+    background-color: #7ac077;
+    transform: translateY(-10px);
+}
+#btn-smash:active{
+    background-color: #284128;
+}
+#btn-pass:hover{
+    background-color: #c07777;
+    transform: translateY(-10px);
+}
+#btn-pass:active{
+    background-color: #3d2525;
+}
+/*
+-----------------------------
+    Navbar
+-----------------------------
+*/
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: var(--navbar-color);
+}
+nav ul li {
+    vertical-align: baseline;
+}
+nav ul li a {
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: var(--font-color);
+}
+nav ul li img {
+    margin: 10px;
+    float: left;
+}
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
